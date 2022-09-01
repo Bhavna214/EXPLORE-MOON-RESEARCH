@@ -1,0 +1,138 @@
+*{
+  overflow: hidden;
+}
+
+.header {
+  font-size: 3em;
+  color: white;
+  background: #404040;
+  text-align: center;
+  height: 2.5em;
+  text-shadow: 4px 4px 4px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#error {
+  font-size: 2em;
+  color: red;
+  height: 50px;
+  text-shadow: 2px 2px 2px black;
+  margin: 2em;
+  display: none;
+}
+
+.container {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+}
+
+.visible {
+  display: block;
+}
+
+#target {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+}
+
+body {
+  background: #000000;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior: none;
+}
+
+.popup {
+  font-family: 'Courier New', Courier, monospace;
+  position: absolute;
+  /* background-color: white; */
+  background: rgba(19, 154, 172, 0.2);
+  border: 2px solid white;
+  color: white;
+  margin: 1rem;
+  right: 0px;
+  bottom: 0px;
+  min-height: fit-content;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 2rem;
+  border-radius: 20px;
+  height: calc(100vh-8em);
+}
+
+.line{
+  position: relative;
+  width: 100%;
+  /* border-right: 2px solid white; */
+  /* white-space: nowrap; */
+  overflow: hidden;
+  transform: translateY(-50%);
+  font-size: 1.45rem;
+  margin:0;
+  margin-top: 2rem;
+  /* color: #f0e969; */
+
+}
+
+#instruct{
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* .anim-typewriter{
+  animation: typewriter 10s steps(40) 1s 1 normal both,
+  blinkTextCursor 500ms steps(40) infinite normal;
+
+} */
+
+@keyframes typewriter{
+  from{
+      width: 0;
+  }
+  to{
+      width: 100%;
+  }
+}
+
+@keyframes blinkTextCursor{
+  from{
+      border-right-color: rgba(255, 255, 255, 1);
+  }
+  to{
+      border-right-color: transparent;
+  }
+}
+
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h2{
+  border: 2px solid white;
+  border-radius: 10px;
+  color:white;
+  min-width: fit-content;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 1rem;
+}
+h2:hover{
+  cursor: pointer; 
+  background-color: #139AAC; 
+  color: azure;        
+}
