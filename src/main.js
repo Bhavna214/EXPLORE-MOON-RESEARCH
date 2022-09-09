@@ -53,7 +53,7 @@ class ProceduralTerrain_Demo extends game.Game {
     };
     this._gui = new GUI();
 
-    const generalRollup = this._gui.addFolder('General');
+    // const generalRollup = this._gui.addFolder('General');
     this._gui.close();
   }
 
@@ -73,3 +73,8 @@ function _Main() {
 }
 
 _Main();
+
+window.onload = function () {
+  document.getElementById('title').className = 'animate-title';
+  
+}
